@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Updock&display=swap" );
+h1{ font-family:"courgette";}
+h2{ font-family:"exo 2";}
+p{ font-family:"exo 2";}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    
+}
+
+main#portada{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("fondo.jpeg");
+    background-size:initial;
+    background-position: center;
+    text-align: center;
+    font-style: "Courgette";
+font-size: 40pt;}
+
+
+
+#portada header{
+    background-color: inherit;
+}
+
+
+header{
+    background-color:rgb(39, 39, 38) ;
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+header h1{
+    color: #e8ed09;
+    font-size: 50pt;
+}
+nav{
+    background-color:#e8ed09;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; /* Espaciado interno */
+    
+}
+nav p{
+    color:rgb(39, 39, 38);
+}
+
+aside{
+    background-color: black;
+    grid-column: auto;
+    grid-row:auto;
+    font-size: 20pt;
+}
+
+
+.MAQUINA aside{
+    background-image: url('maquina\ de\ liar.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    padding: 20px; /* Espaciado interno */
+    color: #e8ed09; /* Color del texto */
+}
+
+.Clipper aside{
+    background-image: url('ENCENDEDOR-CLIPPER-METAL-ROSE-OF-ROSE-GOLD-300x300.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position:center; /* Centra la imagen */
+    padding: 20px; /* Espaciado interno */
+    color: #e8ed09; /* Color del texto */
+}
+
+.archivo3 aside {
+    background-image: url('CALENDARIO.png'); /* Imagen específica para archivo3 */
+    background-size:cover ;
+    background-position: center;
+    padding: 20px;
+    color:#e8ed09;
+}
+
+article{
+    background-color: rgb(39, 39, 38);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: white;
+}
+ article h1{
+    color:#e8ed09;
+  font-size: 40pt;
+ }
+
+
+
+footer{
+    background-color:rgb(39, 39, 38);
+    grid-column:1/3;
+    grid-row: 4/5;
+}
+footer p{
+    color: white;
+    font-size: 30pt;
+    font-family: "Updock";
+}
+.MAQUINA{
+    background-color:rgb(39, 39, 38);
+    background-image:url(maquina\ de\ liar.png);
+   background-size: contain;
+}
+
+.Clipper{
+    background-color:rgb(39, 39, 38);
+    background-image: url(ENCENDEDOR-CLIPPER-METAL-ROSE-OF-ROSE-GOLD-300x300.png);
+    background-size: contain;
+}
+
+.archivo3{
+    background-color:rgb(39, 39, 38);
+    background-image: url(CALENDARIO.png);
+    background-size: contain;
+background-position:unset;
+}
